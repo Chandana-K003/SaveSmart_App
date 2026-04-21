@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "157627563754",
+    "project_id": "expirytracker-6e67c",
+    "storage_bucket": "expirytracker-6e67c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:157627563754:android:3f1dfb50e943b7d2512193",
+        "android_client_info": {
+          "package_name": "com.example.expirytracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaWPMhE33ukDIBXH17cRpeD4eeVNegkOo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:157627563754:android:942a6ab39378694d512193",
+        "android_client_info": {
+          "package_name": "com.yourname.expirytracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaWPMhE33ukDIBXH17cRpeD4eeVNegkOo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

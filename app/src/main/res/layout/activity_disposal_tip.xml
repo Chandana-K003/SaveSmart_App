@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F8E9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Header icon -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="♻️"
+            android:textSize="56sp"
+            android:gravity="center"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Product name title -->
+        <TextView
+            android:id="@+id/tvDisposalProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#1B5E20"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Card containing tip -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🌿 Eco Disposal Tip"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#2E7D32"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Loading spinner -->
+                <ProgressBar
+                    android:id="@+id/disposalProgressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="visible" />
+
+                <!-- Tip text -->
+                <TextView
+                    android:id="@+id/tvDisposalTipContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="#33691E"
+                    android:lineSpacingExtra="6dp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Retry button (shown on error) -->
+        <Button
+            android:id="@+id/btnRetryDisposal"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="🔄 Retry"
+            android:layout_marginTop="16dp"
+            android:visibility="gone"
+            android:backgroundTint="#A5D6A7"
+            android:textColor="#1B5E20" />
+
+        <!-- Close button -->
+        <Button
+            android:id="@+id/btnCloseDisposal"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="✓ Done"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#2E7D32"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>
