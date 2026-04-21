@@ -45,7 +45,7 @@ class RecipeActivity : AppCompatActivity() {
     private lateinit var progressBar: ProgressBar
 
     private val apiKey =
-        "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"
+        BuildConfig.OPENROUTER_API_KEY
     private val apiUrl =
         "https://openrouter.ai/api/v1/chat/completions"
     private val model = "google/gemma-3-4b-it:free"
